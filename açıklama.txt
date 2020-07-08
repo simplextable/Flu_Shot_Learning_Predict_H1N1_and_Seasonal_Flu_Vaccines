@@ -1,0 +1,26 @@
+best: 0.8416
+
+28.05.YSA = h1n1 problemine yapay sinir ağı eklenmiş hali. bunun score'u siteye yükleyince 0.7605 geldi. bunun epoch sayısı 50 idi.
+28.05.YSA2 = 28.05.YSA dosyasının epoch sayısı 12'ye indirilmiş hali. siteye yükleyince 0.8267 geldi.
+28.05.YSA6 = 28.05.YSA dosyasının epoch sayısı 6'ya indirilmiş hali. 0.8374 geldi.
+28.05.YSA10 = 28.05.YSA dosyasının epoch sayısı 5'e indirilmiş, bir tane de nöron eklenmiş hali. 0.8388 geldi.
+
+h1n1_v011 = bu versiyonda sadece veri işleme kısmında korelasyonu yüksek değerlerin missing value doldurma kısmını target'a 
+göre yapmaya çalışacağız.
+
+h1n1_v012 = v_011'in bir değil bir kaç değişken missing value'su düzeltilmiş hali 
+
+son dosyanın puanını geliştirmek için fırsat var. bazı regresyonu yüksek sütunların missing valuelarına 0 demişisz. ama
+mesela 1 dememiz daha mantıklı. missing valuelara most frequent demek yerine group by yapılabilir.
+
+
+31.05.YSA14 = hakan'ın pc'de denediğimiz modelin 1 sütun missing value bulma
+yöntemi değişmiş hali. missing value kısmı h1n1_v011 dosyasından alındı. 
+missing value değişmemiş halinin puanı 0.8103 idi. bunu yükleyince 0.7893 geldi. 
+
+31.05.YSA15 = 31.05.YSA14'in bir tane katman silinmiş hali. 0.7980 geldi
+
+train_v002 = train_v001'in bir sütunda missing value yöntemi değiştirilmiş hali. train dosyasının 
+tahmini olarak en yüksek skor alınan versiyonu olduğu düşünülüyor. bunun skoru 0.7978 geldi
+
+v001: pytorch_v001(klasör): problemi pytorch ile çözmeye çalıştık. 0.82 gibi bir sonuç bulduk.
