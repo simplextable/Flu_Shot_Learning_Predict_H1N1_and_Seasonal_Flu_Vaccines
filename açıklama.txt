@@ -24,3 +24,7 @@ train_v002 = train_v001'in bir sütunda missing value yöntemi değiştirilmiş 
 tahmini olarak en yüksek skor alınan versiyonu olduğu düşünülüyor. bunun skoru 0.7978 geldi
 
 v001: pytorch_v001(klasör): problemi pytorch ile çözmeye çalıştık. 0.82 gibi bir sonuç bulduk.
+
+v002: pytorch_v002(klasör): test loss'u da her epoch'da hesaplatıp grafiklerini çizdiriyoruz.
+
+v003: pytorch_v003(klasör): ver002'nin bir gelişmiş hali. tek fark burada ikinci target'ı da tahmin ettik.
